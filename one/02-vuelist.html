@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div id="app">
+            <ul>
+                <li v-for="item in musics">{{item}}</li>
+            </ul>
+        </div>
+        <script src="js/vue.js"></script>
+        <script>
+            const app =  new Vue({
+                el: '#app',
+                data: {
+                    musics: ['七里香', '青花瓷', "爱你", '听妈妈的话']
+                }
+            })
+        </script>
+    </body>
+</html>
